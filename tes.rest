@@ -1,0 +1,47 @@
+POST http://127.0.0.1:8000/api/login
+Content-Type: "application/json"
+
+{
+    "email": "admin@gmail.com",
+    "password": "asdasdasd"
+}
+
+###
+POST http://127.0.0.1:8000/api/register
+Accept: "application/json"
+
+{
+    "name": "user",
+    "email": "user@gmail.com",
+    "password": "asdasdasd"
+}
+
+###
+GET http://127.0.0.1:8000/api/me
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODU0MTY4OSwiZXhwIjoxNjQ4NTQ1Mjg5LCJuYmYiOjE2NDg1NDE2ODksImp0aSI6IlJHUFVxWXhwOHN0N1I2c3IiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.beJnCFHiEVBp7cUWiyuS1Z7NodGUBHQeF5mm0hrQkmQ"
+
+###
+GET http://127.0.0.1:8000/api/kategori
+
+###
+GET http://127.0.0.1:8000/api/kategori/laravel
+
+###
+GET http://127.0.0.1:8000/api/author/admin
+
+###
+GET http://127.0.0.1:8000/api/laravel
+
+###
+GET http://127.0.0.1:8000/api/auth/modul
+
+###
+GET http://127.0.0.1:8000/api/auth/modul/1
+
+###
+POST http://127.0.0.1:8000/api/auth/modul
+Accept: "application/json"
+
+{
+    "nama_modul": "User"
+}
